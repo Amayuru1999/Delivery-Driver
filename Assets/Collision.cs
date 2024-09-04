@@ -9,4 +9,8 @@ public class Collision : MonoBehaviour
     {
        Debug.Log("❌ Collision detected with " + other.gameObject.name);
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("✅ Trigger detected with " + other.gameObject.name);
+    }
 }
