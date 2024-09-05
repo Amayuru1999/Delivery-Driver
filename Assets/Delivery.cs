@@ -13,11 +13,12 @@ public class Delivery : MonoBehaviour
     {
         if (other.tag == "Package")
         {
-            Debug.Log("📦 Package delivered to " + other.gameObject.name);
+            Debug.Log("📦 Package picked up " + other.gameObject.name);
             
         }
+        if(other.tag == "Customer")
         {
-            
+            Debug.Log("📦 Package delivered to "+ other.gameObject.name);
         }
     }
 }
